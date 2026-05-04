@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Java
+*.class
+*.jar
+build/
+
+# C++
+*.exe
+*.o
+*.obj
+debug/
+release/
+
+# PHP
+.env
+vendor/
