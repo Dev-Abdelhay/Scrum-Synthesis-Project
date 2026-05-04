@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "scrum_db";
+$dbname = "gestion_projet_scrum";
 $username = "root";
 $password = "";
 
