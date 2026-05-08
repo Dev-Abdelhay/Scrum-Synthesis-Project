@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Actuel</title>
+    <link rel="stylesheet" href="sprint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#" class="active"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell notification-dot"></i>
+                    <div class="avatar">KJ</div>
+                    <span>Kjqopllm</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <!-- Sprint Header -->
+            <section class="sprint-header">
+                <div class="sprint-title">
+                    <h1>Sprint 3 - Développement Interface</h1>
+                    <p>18 Avril - 2 Mai 2026 (15 jours)</p>
+                </div>
+                <button class="btn-black">+ Ajouter une Tâche</button>
+            </section>
+
+            <!-- Goal Card -->
+            <div class="goal-card">
+                <div class="goal-main">
+                    <h4>Objectif du Sprint</h4>
+                    <p>Créer une interface utilisateur complète et responsive pour le tableau de bord et le backlog</p>
+                </div>
+                <div class="goal-progression">
+                    <div class="progression-text">
+                        <span>Progression</span>
+                        <strong>10 / 26 pts</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 38%;"></div>
+                    </div>
+                </div>
+                <div class="goal-timing">
+                    <span class="sub-label">Jours Restants</span>
+                    <div class="timer"><i class="fa-regular fa-clock"></i> 8 jours</div>
+                    <span class="sub-text">Vélocité estimée: 21 pts</span>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <section class="stats-row">
+                <div class="stat-box">
+                    <span class="box-label">Story Points</span>
+                    <span class="box-value">26</span>
+                </div>
+                <div class="stat-box">
+                    <span class="box-label">Complétés</span>
+                    <span class="box-value orange-text">10</span>
+                </div>
+                <div class="stat-box">
+                    <span class="box-label">Restants</span>
+                    <span class="box-value red-text">16</span>
+                </div>
+                <div class="stat-box">
+                    <span class="box-label"><i class="fa-solid fa-chart-line"></i> Burndown</span>
+                    <span class="box-value">38%</span>
+                </div>
+            </section>
+
+            <!-- Kanban Columns -->
+            <div class="kanban">
+                <!-- Column 1 -->
+                <div class="column">
+                    <div class="col-header">
+                        <h3>À Faire</h3>
+                        <span class="col-count">2</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="id">T-001</span>
+                            <span class="pts"><i class="fa-regular fa-circle"></i> 5</span>
+                        </div>
+                        <p class="title">Design système de composants</p>
+                        <div class="card-bottom">
+                            <span class="us">US-002</span>
+                            <div class="av">V</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="column active-col">
+                    <div class="col-header">
+                        <h3>En Cours</h3>
+                        <span class="col-count">2</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="id">T-003</span>
+                            <span class="pts"><i class="fa-regular fa-circle"></i> 5</span>
+                        </div>
+                        <p class="title">Créer composant Backlog</p>
+                        <div class="card-bottom">
+                            <span class="us">US-002</span>
+                            <div class="av">V</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="column">
+                    <div class="col-header">
+                        <h3>Terminé</h3>
+                        <span class="col-count">3</span>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="id">T-005</span>
+                            <span class="pts"><i class="fa-regular fa-circle"></i> 2</span>
+                        </div>
+                        <p class="title">Setup projet React + Tailwind</p>
+                        <div class="card-bottom">
+                            <span class="us">US-002</span>
+                            <div class="av">V</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<script src="sprint.js"></script>
+</body>
+</html>

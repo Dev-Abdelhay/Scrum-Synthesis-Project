@@ -1,0 +1,73 @@
+:root {
+    --bg: #f9fafb;
+    --border: #ececec;
+    --muted: #8e8e8e;
+    --done-bg: #fff8e1;
+    --done-text: #fbc02d;
+    --progress-bg: #e0f2f1;
+    --progress-text: #00897b;
+    --todo-bg: #f3f4f6;
+    --todo-text: #6b7280;
+    --high-bg: #ffebee;
+    --high-text: #ef5350;
+    --med-bg: #fff3e0;
+    --med-text: #ffb74d;
+    --low-bg: #f1f5f9;
+    --low-text: #94a3b8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: #1a1a1a; }
+
+.container { display: flex; min-height: 100vh; }
+
+/* Sidebar Reused */
+.sidebar { width: 240px; background: #fff; border-right: 1px solid var(--border); padding: 25px 0; position: fixed; height: 100vh; }
+.sidebar-header { padding: 0 25px 35px; }
+.sidebar-header p { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+.menu a { display: flex; align-items: center; padding: 12px 25px; text-decoration: none; color: #333; font-size: 0.9rem; gap: 12px; }
+.menu a.active { background: #f3f4f6; font-weight: 600; border-radius: 0 25px 25px 0; margin-right: 15px; }
+.sidebar-footer { position: absolute; bottom: 25px; width: 100%; }
+
+/* Content Area */
+.content { margin-left: 240px; flex: 1; padding: 25px 40px; }
+
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.search-box { background: #f1f3f4; padding: 10px 15px; border-radius: 8px; width: 450px; display: flex; align-items: center; gap: 10px; }
+.search-box input { border: none; background: transparent; outline: none; width: 100%; }
+.user-profile { display: flex; align-items: center; gap: 18px; font-size: 0.9rem; }
+.avatar { width: 32px; height: 32px; background: #000; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.header-text h1 { font-size: 1.4rem; font-weight: 700; }
+.header-text p { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+.btn-black { background: #000; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+/* Table Container */
+.tasks-container { background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.tasks-card-header { padding: 20px 25px; border-bottom: 1px solid var(--border); }
+.tasks-card-header h3 { font-size: 1rem; font-weight: 600; }
+
+.tasks-table { width: 100%; border-collapse: collapse; }
+.tasks-table th { text-align: left; background: #f9fafb; padding: 12px 25px; font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+.tasks-table td { padding: 15px 25px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+
+.task-title { font-weight: 500; font-size: 0.95rem; }
+.task-sub { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+/* Badges */
+.badge { padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+
+.status-done { background: var(--done-bg); color: var(--done-text); }
+.status-progress { background: var(--progress-bg); color: var(--progress-text); }
+.status-todo { background: var(--todo-bg); color: var(--todo-text); }
+
+.prio-high { background: var(--high-bg); color: var(--high-text); }
+.prio-med { background: var(--med-bg); color: var(--med-text); }
+.prio-low { background: var(--low-bg); color: var(--low-text); }
+
+/* User Cell */
+.user-cell { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; }
+.avatar-sm { width: 24px; height: 24px; border-radius: 50%; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; }
+
+.menu-icon { color: #ccc; cursor: pointer; }

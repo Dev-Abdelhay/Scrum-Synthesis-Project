@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier</title>
+    <link rel="stylesheet" href="calend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#" class="active"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell notification-dot"></i>
+                    <div class="avatar">KJ</div>
+                    <span>Kjqopllm</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <section class="page-header">
+                <div class="header-text">
+                    <h1>Calendrier</h1>
+                    <p>Planning et échéances</p>
+                </div>
+            </section>
+
+            <!-- Calendar Placeholder Container -->
+            <div class="calendar-container">
+                <div class="placeholder-content">
+                    <i class="fa-regular fa-calendar-check calendar-icon"></i>
+                    <h3>Vue Calendrier</h3>
+                    <p>Le calendrier sera affiché ici</p>
+                </div>
+            </div>
+        </main>
+    </div>
+<script src="calend.js"></script>
+</body>
+</html>

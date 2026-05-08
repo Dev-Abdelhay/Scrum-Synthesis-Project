@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe</title>
+    <link rel="stylesheet" href="equipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#" class="active"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell notification-dot"></i>
+                    <div class="avatar">KJ</div>
+                    <span>Kjqopllm</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <section class="page-header">
+                <div class="header-text">
+                    <h1>Équipe</h1>
+                    <p>Membres de votre équipe</p>
+                </div>
+                <button class="btn-black">+ Inviter un membre</button>
+            </section>
+
+            <div class="team-container">
+                <div class="team-card-header">
+                    <h3>Membres de l'Équipe</h3>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <div class="member-card">
+                        <div class="card-header-actions">
+                            <div class="avatar-lg">MD</div>
+                            <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Marie Dupont</h4>
+                            <p class="role">Chef de Projet</p>
+                            <div class="email"><i class="fa-regular fa-envelope"></i> marie.dupont@email.com</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-active"><span class="dot"></span> Actif</span>
+                            <span class="task-count">8 tâches</span>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="member-card">
+                        <div class="card-header-actions">
+                            <div class="avatar-lg">JM</div>
+                            <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Jean Martin</h4>
+                            <p class="role">Développeur Backend</p>
+                            <div class="email"><i class="fa-regular fa-envelope"></i> jean.martin@email.com</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-active"><span class="dot"></span> Actif</span>
+                            <span class="task-count">12 tâches</span>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="member-card">
+                        <div class="card-header-actions">
+                            <div class="avatar-lg">SL</div>
+                            <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Sophie Laurent</h4>
+                            <p class="role">Développeur C++</p>
+                            <div class="email"><i class="fa-regular fa-envelope"></i> sophie.laurent@email.com</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-active"><span class="dot"></span> Actif</span>
+                            <span class="task-count">6 tâches</span>
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="member-card">
+                        <div class="card-header-actions">
+                            <div class="avatar-lg">PD</div>
+                            <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Pierre Dubois</h4>
+                            <p class="role">Développeur PHP</p>
+                            <div class="email"><i class="fa-regular fa-envelope"></i> pierre.dubois@email.com</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-active"><span class="dot"></span> Actif</span>
+                            <span class="task-count">8 tâches</span>
+                        </div>
+                    </div>
+
+                    <!-- Member 5 (You) -->
+                    <div class="member-card">
+                        <div class="card-header-actions">
+                            <div class="avatar-lg">VO</div>
+                            <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                        </div>
+                        <div class="member-info">
+                            <h4>Vous</h4>
+                            <p class="role">Développeur Frontend</p>
+                            <div class="email"><i class="fa-regular fa-envelope"></i> vous@email.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<script src="equipe.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches</title>
+    <link rel="stylesheet" href="tache.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#" class="active"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell notification-dot"></i>
+                    <div class="avatar">KJ</div>
+                    <span>Kjqopllm</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <section class="page-header">
+                <div class="header-text">
+                    <h1>Tâches</h1>
+                    <p>Gérez toutes vos tâches</p>
+                </div>
+                <button class="btn-black">+ Nouvelle Tâche</button>
+            </section>
+
+            <div class="tasks-container">
+                <div class="tasks-card-header">
+                    <h3>Tâches Récentes</h3>
+                </div>
+                
+                <table class="tasks-table">
+                    <thead>
+                        <tr>
+                            <th>Tâche</th>
+                            <th>Statut</th>
+                            <th>Priorité</th>
+                            <th>Assigné à</th>
+                            <th>Échéance</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr>
+                            <td>
+                                <div class="task-title">Concevoir la base de données</div>
+                                <div class="task-sub">Gestion de Projet</div>
+                            </td>
+                            <td><span class="badge status-done"><i class="fa-regular fa-circle-check"></i> Terminé</span></td>
+                            <td><span class="badge prio-high">Haute</span></td>
+                            <td><div class="user-cell"><div class="avatar-sm">MD</div> Marie Dupont</div></td>
+                            <td>25 Avril</td>
+                            <td><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td>
+                                <div class="task-title">Créer l'interface utilisateur</div>
+                                <div class="task-sub">Gestion de Projet</div>
+                            </td>
+                            <td><span class="badge status-progress"><i class="fa-regular fa-circle"></i> En cours</span></td>
+                            <td><span class="badge prio-high">Haute</span></td>
+                            <td><div class="user-cell"><div class="avatar-sm black">V</div> Vous</div></td>
+                            <td>29 Avril</td>
+                            <td><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></td>
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr>
+                            <td>
+                                <div class="task-title">Développer l'API REST</div>
+                                <div class="task-sub">Gestion de Projet</div>
+                            </td>
+                            <td><span class="badge status-progress"><i class="fa-regular fa-circle"></i> En cours</span></td>
+                            <td><span class="badge prio-med">Moyenne</span></td>
+                            <td><div class="user-cell"><div class="avatar-sm black">JM</div> Jean Martin</div></td>
+                            <td>2 Mai</td>
+                            <td><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td>
+                                <div class="task-title">Intégration C++ backend</div>
+                                <div class="task-sub">Gestion de Projet</div>
+                            </td>
+                            <td><span class="badge status-todo"><i class="fa-regular fa-circle"></i> À faire</span></td>
+                            <td><span class="badge prio-med">Moyenne</span></td>
+                            <td><div class="user-cell"><div class="avatar-sm black">SL</div> Sophie Laurent</div></td>
+                            <td>5 Mai</td>
+                            <td><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></td>
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr>
+                            <td>
+                                <div class="task-title">Tests unitaires PHP</div>
+                                <div class="task-sub">Gestion de Projet</div>
+                            </td>
+                            <td><span class="badge status-todo"><i class="fa-regular fa-circle"></i> À faire</span></td>
+                            <td><span class="badge prio-low">Basse</span></td>
+                            <td><div class="user-cell"><div class="avatar-sm black">PD</div> Pierre Dubois</div></td>
+                            <td>8 Mai</td>
+                            <td><i class="fa-solid fa-ellipsis-vertical menu-icon"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+<script src="tache.js"></script>
+</body>
+</html>

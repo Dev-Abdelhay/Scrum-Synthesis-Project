@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Backlog</title>
+    <link rel="stylesheet" href="backlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#" class="active"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="avatar">KJ</div>
+                    <span>Kjqopllm</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <section class="dashboard-header">
+                <div class="title-area">
+                    <h1>Product Backlog</h1>
+                    <p>User stories et features à développer</p>
+                </div>
+                <button class="btn-primary">+ Nouvelle User Story</button>
+            </section>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <span>Total Stories</span>
+                    <h3>8</h3>
+                </div>
+                <div class="stat-card">
+                    <span>Story Points Total</span>
+                    <h3>63</h3>
+                </div>
+                <div class="stat-card">
+                    <span>Prêts pour Sprint</span>
+                    <h3>24 pts</h3>
+                </div>
+                <div class="stat-card">
+                    <span>Dans le Sprint</span>
+                    <h3>13 pts</h3>
+                </div>
+            </section>
+
+            <section class="backlog-section">
+                <div class="backlog-header">
+                    <h3>Product Backlog Items</h3>
+                </div>
+                
+                <!-- Item 1 -->
+                <div class="backlog-item">
+                    <div class="drag-handle"><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="item-content">
+                        <div class="item-top">
+                            <span class="id">US-001</span>
+                            <span class="priority high"><i class="fa-solid fa-arrow-up"></i></span>
+                            <span class="title">Authentification utilisateur</span>
+                            <span class="badge ready">Prêt</span>
+                        </div>
+                        <p class="description">En tant qu'utilisateur, je veux pouvoir me connecter avec email/mot de passe</p>
+                        <div class="item-footer">
+                            <span class="points">8</span>
+                            <span class="meta">Story Points</span>
+                            <span class="meta">3 critères d'acceptation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="backlog-item">
+                    <div class="drag-handle"><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="item-content">
+                        <div class="item-top">
+                            <span class="id">US-002</span>
+                            <span class="priority high"><i class="fa-solid fa-arrow-up"></i></span>
+                            <span class="title">Tableau de bord responsive</span>
+                            <span class="badge in-sprint">Dans le Sprint</span>
+                        </div>
+                        <p class="description">En tant qu'utilisateur, je veux voir un dashboard adapté à mobile/tablet</p>
+                        <div class="item-footer">
+                            <span class="points">5</span>
+                            <span class="meta">Story Points</span>
+                            <span class="meta">4 critères d'acceptation</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="backlog.js"></script>
+</body>
+</html>

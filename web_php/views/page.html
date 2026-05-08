@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>GDP</h2>
+                <p>Gestion Agile</p>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active"><i class="fa-solid fa-table-columns"></i> Tableau de bord</a>
+                <a href="#"><i class="fa-solid fa-list-ul"></i> Backlog</a>
+                <a href="#"><i class="fa-solid fa-bolt"></i> Sprint Actuel</a>
+                <a href="#"><i class="fa-regular fa-square-check"></i> Tâches</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Équipe</a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i> Calendrier</a>
+            </nav>
+            <div class="sidebar-footer">
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher...">
+                </div>
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell"></i>
+                    <div class="avatar">CH</div>
+                    <span>Chbiliahmedamine0</span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon orange"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <span class="label">Sprint Actuel</span>
+                    <h3 class="value">Sprint 3</h3>
+                    <span class="subtext">8 jours restants</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon teal"><i class="fa-regular fa-clock"></i></div>
+                    <span class="label">Story Points</span>
+                    <h3 class="value">26</h3>
+                    <span class="subtext">10/26 complétés</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon yellow"><i class="fa-regular fa-circle-check"></i></div>
+                    <span class="label">Tâches Terminées</span>
+                    <h3 class="value">3</h3>
+                    <span class="subtext">Ce sprint</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange-light"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <span class="label">Product Backlog</span>
+                    <h3 class="value">8</h3>
+                    <span class="subtext">63 story points</span>
+                </div>
+            </section>
+
+            <div class="dashboard-body">
+                <!-- Recent Tasks Table -->
+                <section class="tasks-section">
+                    <div class="section-header">
+                        <h3>Tâches Récentes</h3>
+                    </div>
+                    <table class="tasks-table">
+                        <thead>
+                            <tr>
+                                <th>Tâche</th>
+                                <th>Statut</th>
+                                <th>Priorité</th>
+                                <th>Assigné à</th>
+                                <th>Échéance</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="task-name">Concevoir la base de données</div>
+                                    <div class="task-project">Gestion de Projet</div>
+                                </td>
+                                <td><span class="status completed"><i class="fa-regular fa-circle-check"></i> Terminé</span></td>
+                                <td><span class="priority high">Haute</span></td>
+                                <td>
+                                    <div class="assignee"><div class="avatar-sm">MD</div> Marie Dupont</div>
+                                </td>
+                                <td>25 Avril</td>
+                                <td><i class="fa-solid fa-ellipsis-vertical menu-dots"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="task-name">Créer l'interface utilisateur</div>
+                                    <div class="task-project">Gestion de Projet</div>
+                                </td>
+                                <td><span class="status in-progress"><i class="fa-regular fa-circle"></i> En cours</span></td>
+                                <td><span class="priority high">Haute</span></td>
+                                <td>
+                                    <div class="assignee"><div class="avatar-sm black">V</div> Vous</div>
+                                </td>
+                                <td>29 Avril</td>
+                                <td><i class="fa-solid fa-ellipsis-vertical menu-dots"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="task-name">Développer l'API REST</div>
+                                    <div class="task-project">Gestion de Projet</div>
+                                </td>
+                                <td><span class="status in-progress"><i class="fa-regular fa-circle"></i> En cours</span></td>
+                                <td><span class="priority medium">Moyenne</span></td>
+                                <td>
+                                    <div class="assignee"><div class="avatar-sm black">JM</div> Jean Martin</div>
+                                </td>
+                                <td>2 Mai</td>
+                                <td><i class="fa-solid fa-ellipsis-vertical menu-dots"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Recent Activity -->
+                <aside class="activity-section">
+                    <h3>Activité Récente</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon yellow"><i class="fa-regular fa-circle-check"></i></div>
+                            <div class="activity-text">
+                                <p><strong>Marie Dupont</strong> a terminé la tâche <strong>Concevoir la base de données</strong></p>
+                                <span>Il y a 2h</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon teal"><i class="fa-regular fa-comment"></i></div>
+                            <div class="activity-text">
+                                <p><strong>Jean Martin</strong> a commenté sur <strong>Développer l'API REST</strong></p>
+                                <span>Il y a 3h</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon orange"><i class="fa-regular fa-file-lines"></i></div>
+                            <div class="activity-text">
+                                <p><strong>Sophie Laurent</strong> a ajouté un document <strong>Spécifications techniques</strong></p>
+                                <span>Il y a 5h</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon blue"><i class="fa-solid fa-user-plus"></i></div>
+                            <div class="activity-text">
+                                <p><strong>Pierre Dubois</strong> a rejoint le projet <strong>Gestion de Projet</strong></p>
+                                <span>Hier</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="page.js"></script>
+</body>
+</html>
